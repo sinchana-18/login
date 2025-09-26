@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Signup</h1>
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="text" id="password" placeholder="password" required />
+    <input type="text" id="phone" placeholder="Phone" />
+    <input type="text" id="profileImage" placeholder="Profile Image URL" />
+    <input type="text" id="country" placeholder="Country" />
+      <select id="state" required>
+        <option value="" disabled selected>Select State</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Kerala">Kerala</option>
+      </select>
+      <select id="city" required>
+        <option value="" disabled selected>Select City</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kochi">Kochi</option>
+      </select>
+    <input type="date" id="dob" placeholder="Date of Birth" />
+    <input type="text" id="interests" placeholder="Interests (comma separated)" />
+    <button type="submit">Sign Up</button>
+  </form>
+  <div id="result"></div>
+  <script src="app.js"></script>
+</body>
+</html>
